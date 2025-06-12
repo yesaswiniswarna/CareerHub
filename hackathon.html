@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathons Hub</title>
+    <style>
+       body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+
+        
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            background-color: #007bff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        nav {
+            background-color: #007bff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #0056b3;
+            color: #fff;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            background-image: url("https://t3.ftcdn.net/jpg/08/41/62/98/240_F_841629874_tBAGnUpLrMS3KncGV0KtG6lKSSyc4gFX.jpg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            border-radius: 8px;
+        }
+
+        .hero h1,
+        .hero p {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .hackathon-boxes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .hackathon-box {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 200px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .hackathon-box h2 {
+            font-size: 1.8rem;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        .hackathon-box p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .hackathon-box a {
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .hackathon-box a:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .hackathon-boxes {
+                flex-direction: column;
+            }
+
+            .hackathon-box {
+                flex: 1 1 auto;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://vishnu.edu.in/upload_news/newlogo.bmp" alt="Career Hub Logo">
+            <h1>Hackathons Hub</h1>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Login / Register</a></li>
+                <div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h1>Explore Exciting Hackathons</h1>
+            <p>Join, Compete, and Win in Top Hackathons Around the World</p>
+        </div>
+
+        <!-- Hackathon Boxes Section -->
+        <div class="hackathon-boxes">
+            <div class="hackathon-box">
+                <h2>🎉AgriSURE Greenathon 2024 | Hack2skill</h2>
+                <p>Presented by NABARD and the Ministry of Agriculture and Farmers' Welfare, powered by Hack2skill, this virtual hackathon uses AI to solve agricultural challenges.</p>
+                <a href="https://bit.ly/4cDGAu0" target="_blank">Learn More</a>
+            </div>
+            <div class="hackathon-box">
+                <h2>🎉Flipkart GRiD 6.0 - Software Development Track</h2>
+                <p>Flipkart is hiring through this hackathon only. Take this hackathon seriously and apply ASAP.</p>
+                <a href="https://unstop.com/hackathons/flipkart-grid-60-software-development-track-flipkart-grid-60-flipkart-1024247?lb=mNiOAfe&utm_medium=Share&utm_source=shortUrl" target="_blank">Learn More</a>
+            </div>
+            <div class="hackathon-box">
+                <h2>Techno Spark 2024</h2>
+                <p>🎉 Dayananda Sagar Academy of Technology and Management 🎉, Department of Information Science and Engineering presents Techno Spark 2024.</p>
+                <a href="https://msha.ke/technospark_ise_dsatm" target="_blank">Learn More</a>
+            </div>
+            <div class="hackathon-box">
+                <h2>🎉 Join Us for Code Cubicle 2.0</h2>
+                <p>Organized by Geek Room, Code Cubicle 2.0 is back and bigger than ever! Don't miss out on the chance to showcase your skills. Register now and be part of the future!</p>
+                <a href="https://code-cubicle-2.devfolio.co/" target="_blank">Learn More</a>
+            </div>
+            <div class="hackathon-box">
+                <h2>💥 Hackarcode Registration Opens 🎮</h2>
+                <p>Free food 🍕, swags for every participant, gaming nights on Discord, and a prize pool of 5 lakhs+ 🤩💰.</p>
+                <a href="https://www.hackquest.io/en/hackathon/explore/HackArCode" target="_blank">Learn More</a>
+            </div>
+            <div class="hackathon-box">
+                <h2>Solidus AI Tech Hack-AI-Thon</h2>
+                <p>Solidus AI Tech Hack-AI-Thon with prizes worth 16 Lakhs and a chance to earn from the solution you build.</p>
+                <a href="https://p.hck.re/19Kp" target="_blank">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/696447f1-a8f0-47c0-914f-3e4aa6711386/webchat/v2.1/config.js"></script>
+    <footer>
+        <p>&copy; 2023 Hackathons Hub. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

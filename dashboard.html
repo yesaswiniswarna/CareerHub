@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - Career Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --background-color: #f8f9fa;
+            --text-color: #333;
+            --card-background: #ffffff;
+            --border-color: #dee2e6;
+        }
+
+     
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+        padding: 0;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        header {
+            background-color: #007bff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 10px 30px;
+            border-radius: 25px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #0056b3;
+            color: #fff;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+
+        
+        .dashboard {
+            display: flex;
+            margin-top: 2rem;
+            gap: 2rem;
+        }
+
+        .sidebar {
+            flex: 0 0 250px;
+            background-color: var(--card-background);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .sidebar h2 {
+            margin-bottom: 1rem;
+            font-weight: 500;
+            color: var(--primary-color);
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar li {
+            margin-bottom: 0.5rem;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: var(--text-color);
+            transition: color 0.3s ease;
+        }
+
+        .sidebar a:hover {
+            color: var(--primary-color);
+        }
+
+        .main-content {
+            flex: 1;
+        }
+
+        .card {
+            background-color: var(--card-background);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            margin-bottom: 1rem;
+            font-weight: 500;
+            color: var(--primary-color);
+        }
+
+        .profile-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .profile-form input {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+        }
+
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .opportunity-card {
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .opportunity-card h3 {
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .opportunity-card p {
+            margin-bottom: 0.5rem;
+        }
+
+        .notifications-list li, .bookmarks-list li {
+            margin-bottom: 0.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .notifications-list li:last-child, .bookmarks-list li:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+      <div class="logo">
+        <img
+          src="https://vishnu.edu.in/upload_news/newlogo.bmp"
+          alt="Career Hub Logo"
+        />
+        <h1>Career Hub</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="login.html">Login / Register</a></li>
+          <div id="google_translate_element"></div>
+
+          <script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement(
+                { pageLanguage: "en" },
+                "google_translate_element"
+              );
+            }
+          </script>
+
+          <script
+            type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+          ></script>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+        <div class="dashboard">
+            <aside class="sidebar">
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#feed">Opportunity Feed</a></li>
+                    <li><a href="#bookmarks">Bookmarks</a></li>
+                    <li><a href="#notifications">Notifications</a></li>
+                </ul>
+            </aside>
+            <main class="main-content">
+                <section id="profile" class="card">
+                    <h2>User Profile</h2>
+                    <form id="profile-form" class="profile-form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="interests">Interests:</label>
+                        <input type="text" id="interests" name="interests">
+                        <button type="submit" class="btn">Update Profile</button>
+                    </form>
+                </section>
+                
+                <section id="feed" class="card">
+                    <h2>Opportunity Feed</h2>
+                    <div class="opportunity-card">
+                        <h3>Software Development Internship</h3>
+                        <p>Company XYZ is offering a 3-month internship for passionate coders.</p>
+                        <button class="btn bookmark-btn">Bookmark</button>
+                    </div>
+                    <div class="opportunity-card">
+                        <h3>Web Design Certification</h3>
+                        <p>Learn the latest web design techniques with our comprehensive course.</p>
+                        <button class="btn bookmark-btn">Bookmark</button>
+                    </div>
+                </section>
+                
+                <section id="bookmarks" class="card">
+                    <h2>Bookmarked Opportunities</h2>
+                    <ul id="bookmarks-list" class="bookmarks-list">
+                        <!-- Bookmarked items will be added here dynamically -->
+                    </ul>
+                </section>
+                
+                <section id="notifications" class="card">
+                    <h2>Notifications</h2>
+                    <ul id="notifications-list" class="notifications-list">
+                        <li>New internship opportunity matching your interests!</li>
+                        <li>Reminder: Certification course starts next week.</li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/696447f1-a8f0-47c0-914f-3e4aa6711386/webchat/v2.1/config.js"></script>
+    <script>
+        // Handle bookmarking
+        document.querySelectorAll('.bookmark-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const opportunityTitle = this.parentElement.querySelector('h3').textContent;
+                const bookmarksList = document.getElementById('bookmarks-list');
+                const listItem = document.createElement('li');
+                listItem.textContent = opportunityTitle;
+                bookmarksList.appendChild(listItem);
+                this.disabled = true;
+                this.textContent = 'Bookmarked';
+                this.style.backgroundColor = '#6c757d';
+            });
+        });
+
+        // Handle profile form submission
+        document.getElementById('profile-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Profile updated successfully!');
+        });
+
+        // Handle logout
+        document.getElementById('logout-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('Logged out successfully!');
+            // In a real application, you would redirect to the login page or home page here
+        });
+    </script>
+</body>
+</html>

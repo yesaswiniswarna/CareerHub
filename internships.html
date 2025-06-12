@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Hub</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            background-color: #007bff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        nav {
+            background-color: #007bff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #0056b3;
+            color: #fff;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            background-image: url("https://as1.ftcdn.net/v2/jpg/02/78/69/20/1000_F_278692068_HPED7cH7NxcyAuOJOIBNbdXlTZ0bK7MS.jpg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            border-radius: 8px;
+        }
+
+        .hero h1,
+        .hero p {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .internship-boxes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .internship-box {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 200px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .internship-box h2 {
+            font-size: 1.8rem;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        .internship-box p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .internship-box a {
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .internship-box a:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .internship-boxes {
+                flex-direction: column;
+            }
+
+            .internship-box {
+                flex: 1 1 auto;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://vishnu.edu.in/upload_news/newlogo.bmp" alt="Career Hub Logo">
+            <h1>Internship Hub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Login / Register</a></li>
+                <div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h1>Find the Best Internships</h1>
+            <p>Explore opportunities to kickstart your career</p>
+        </div>
+
+        <!-- Internship Boxes Section -->
+        <div class="internship-boxes">
+            <div class="internship-box">
+                <h2>linkreit Internship</h2>
+                <p>Develop your talents, interpersonal skills, and commercial knowledge in a programme.</p>
+                <a href="https://www.linkreit.com/en/careers/summer-internship-program" target="_blank">Learn More</a>
+            </div>
+            <div class="internship-box">
+                <h2>NITI Aayog Internship</h2>
+                <p>To evolve a shared vision of national development priorities, sectors, and strategies.</p>
+                <a href="https://www.niti.gov.in/internship" target="_blank">Learn More</a>
+            </div>
+            <div class="internship-box">
+                <h2>AICTE Internship</h2>
+                <p>Find internships that match your preferences on a PAN India basis.</p>
+                <a href="https://internship.aicte-india.org/" target="_blank">Learn More</a>
+            </div>
+            <div class="internship-box">
+                <h2>Internshala</h2>
+                <p>Discover the latest paid summer internships and get hired with ease.</p>
+                <a href="https://internshala.com/internships/matching-preferences/" target="_blank">Learn More</a>
+            </div>
+            <div class="internship-box">
+                <h2>LinkedIn</h2>
+                <p>Manage your professional identity and access opportunities worldwide.</p>
+                <a href="https://www.linkedin.com/feed/" target="_blank">Learn More</a>
+            </div>
+            <div class="internship-box">
+                <h2>Amazon Jobs</h2>
+                <p>Build a network and link up with peers around the world through internships.</p>
+                <a href="https://www.amazon.jobs/content/en/career-programs/university/internships-for-students" target="_blank">Learn More</a>
+            </div>
+            <div class="internship-box">
+                <h2>Google Internships</h2>
+                <p>Explore software engineering internships globally for students.</p>
+                <a href="https://buildyourfuture.withgoogle.com/internships" target="_blank">Learn More</a>
+            </div>
+            <div class="internship-box">
+                <h2>Infosys Careers</h2>
+                <p>Participate in our world-renowned training and work on projects.</p>
+                <a href="https://www.infosys.com/careers/internships.html" target="_blank">Learn More</a>
+            </div>
+            <div class="internship-box">
+                <h2>Naukri</h2>
+                <p>Connect with employers and apply to job opportunities on India's No.1 job site.</p>
+                <a href="https://www.naukri.com/mnjuser/homepage" target="_blank">Learn More</a>
+            </div>
+            <div class="internship-box">
+                <h2>Glassdoor</h2>
+                <p>Search jobs, salaries, and company reviews, and chat anonymously.</p>
+                <a href="https://www.glassdoor.co.in/Community/index.htm" target="_blank">Learn More</a>
+            </div>
+            <div class="internship-box">
+                <h2>Indeed</h2>
+                <p>Search millions of jobs online to find the next step in your career.</p>
+                <a href="https://in.indeed.com/" target="_blank">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/696447f1-a8f0-47c0-914f-3e4aa6711386/webchat/v2.1/config.js"></script>
+    <footer>
+        <p>&copy; 2023 Internship Hub. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

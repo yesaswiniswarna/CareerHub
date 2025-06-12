@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <marquee><mark><b>THE LATEST UPDATES WILL BE DISPLAYED HERE</b></mark></marquee>
+    
+    <title>Career Hub</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f9f9f9;
+      }
+
+      .zoom {
+        padding: 50px;
+
+        transition: transform 0.2s; /* Animation */
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+      }
+
+      .zoom:hover {
+        transform: scale(
+          1.5
+        ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      header {
+        background-color: #007bff;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+      }
+
+      nav {
+        background-color: #007bff;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+      }
+
+      nav li {
+        margin: 0 10px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 1.1rem;
+        padding: 10px 20px;
+        border-radius: 25px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      nav a:hover {
+        background-color: #0056b3;
+        color: #fff;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo img {
+        height: 40px;
+        margin-right: 10px;
+      }
+
+      .logo h1 {
+        font-size: 1.5rem;
+        margin: 0;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      .hero {
+        background-image: url("https://images.pexels.com/photos/8197531/pexels-photo-8197531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+        /* Replace the above URL with an image of students or a more appropriate image from the web */
+
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 150px 20px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        position: relative;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        /* Adds a dark overlay */
+        z-index: 1;
+        border-radius: 8px;
+      }
+
+      .hero h1,
+      .hero p {
+        position: relative;
+        z-index: 2;
+      }
+
+      .hero h1 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+      }
+
+      .search-form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+
+      .search-form input,
+      .search-form select,
+      .search-form button {
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      .search-form input {
+        flex: 1 1 300px;
+      }
+
+      .search-form select {
+        flex: 1 1 150px;
+      }
+
+      .search-form button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        flex: 1 1 100px;
+      }
+
+      .search-form button:hover {
+        background-color: #0056b3;
+      }
+
+      .stats {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      .stat {
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 10px;
+        flex: 1 1 200px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .stat h2 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        color: #007bff;
+      }
+
+      .stat p {
+        font-size: 1rem;
+      }
+
+      .info-boxes {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 30px;
+      }
+
+      .info-box {
+        background-color: #fff;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        flex: 1 1 30%;
+      }
+
+      .info-box h3 {
+        font-size: 1.8rem;
+        color: #007bff;
+        margin-bottom: 15px;
+      }
+
+      .info-box p {
+        font-size: 1rem;
+        color: #666;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+      .zoom h3:hover {
+        color: #191919;
+      }
+
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2.5rem;
+        }
+
+        .hero p {
+          font-size: 1rem;
+        }
+
+        .search-form {
+          flex-direction: column;
+        }
+
+        .search-form input,
+        .search-form select,
+        .search-form button {
+          width: 100%;
+          margin: 5px 0;
+        }
+
+        .stats {
+          flex-direction: column;
+          margin: 10px 0;
+        }
+
+        .info-boxes {
+          flex-direction: column;
+        }
+
+        .info-box {
+          flex: 1 1 auto;
+          margin: 10px 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="https://vishnu.edu.in/upload_news/newlogo.bmp"
+          alt="Career Hub Logo"
+        />
+        <h1>Career Hub</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="login.html">Login / Register</a></li>
+          <div id="google_translate_element"></div>
+
+          <script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement(
+                { pageLanguage: "en" },
+                "google_translate_element"
+              );
+            }
+          </script>
+
+          <script
+            type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+          ></script>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="hero">
+        <h1>
+          Elevate Your Career with Hackathons, Internships, and Certifications
+        </h1>
+        <p>
+          Find the perfect opportunity to learn, compete, and
+          advance your future
+        </p>
+      </div>
+
+      <!-- Info Boxes Section -->
+      <div class="info-boxes">
+        <div class="info-box">
+          <div class="zoom">
+            <b>
+              <a href="hackathon.html"><h3>Hackathons</h3></a>
+              <p>
+                Discover exciting opportunities by clicking here to explore our
+                hackathon links.
+              </p>
+            </b>
+          </div>
+        </div>
+        <div class="info-box">
+          <div class="zoom">
+            <b>
+              <a href="internships.html"><h3>Internships</h3></a>
+              <p>
+                Unlock your potential by clicking here to find the latest
+                internship opportunities.
+              </p>
+            </b>
+          </div>
+        </div>
+        <div class="info-box">
+          <div class="zoom">
+            <b>
+              <a href="certifications.html"><h3>Certifications</h3></a>
+              <p>
+                Enhance your skills by clicking here to explore certification
+                courses.
+              </p></b
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Start of Tawk.to Script-->
+    <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/696447f1-a8f0-47c0-914f-3e4aa6711386/webchat/v2.1/config.js"></script>
+    <footer>
+      <p>&copy; 2023 Career Hub. All rights reserved.</p>
+    </footer>
+    <script>
+      function myFunction() {
+        var sidebar = document.getElementById("mySidebar");
+        var menuItems = document.getElementById("menuItems");
+
+        // Toggle display of menu items and apply background color
+        if (
+          menuItems.style.display === "none" ||
+          menuItems.style.display === ""
+        ) {
+          menuItems.style.display = "block";
+          sidebar.classList.add("show-menu");
+        } else {
+          menuItems.style.display = "none";
+          sidebar.classList.remove("show-menu");
+        }
+      }
+    </script>
+  </body>
+</html>
